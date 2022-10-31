@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tasksFragment">
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.flinkou.todolist.ui.tasks.listfragment.TodoListFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/list_todo_fragment" >
+        <action
+            android:id="@+id/action_tasksFragment_to_editTodoFragment"
+            app:destination="@id/editTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTodoFragment"
+        android:name="com.flinkou.todolist.ui.tasks.editfragment.EditTodoFragment"
+        android:label="edit_todo_fragment"
+        tools:layout="@layout/edit_todo_fragment" >
+        <argument
+            android:name="todo"
+            app:argType="com.flinkou.todolist.data.Todo"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_editTodoFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+    </fragment>
+</navigation>

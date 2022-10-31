@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="large_title_style">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="title_style">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="button_text_style">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="body_text_style">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="subhead_style">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

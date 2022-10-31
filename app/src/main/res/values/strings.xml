@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">todo</string>
+    <string-array name="importance_array">
+        <item>Low</item>
+        <item>Basic</item>
+        <item>Important</item>
+    </string-array>
+</resources>
